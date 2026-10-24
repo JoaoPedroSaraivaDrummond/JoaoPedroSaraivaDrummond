@@ -38,30 +38,6 @@
 
 ---
 
-## 📂 Projetos em Destaque
-
-| Projeto | Descrição | Tech Stack |
-|---|---|---|
-| [**Flowboard**](https://github.com/JoaoPedroSaraivaDrummond/Flowboard) | Quadros estilo Trello para fluxos de trabalho, com servidor MCP para o Claude Code ler e mover cartões | TypeScript, Fastify, Prisma, React, PostgreSQL, Docker |
-| [**Acervo**](https://github.com/JoaoPedroSaraivaDrummond/Acervo) | Índice pesquisável de vários repositórios num único SQLite (FTS5), com CLI, interface web e servidor MCP | Python, SQLite |
-
-<details>
-<summary><b>🔒 Outros projetos (repositórios privados)</b></summary>
-<br>
-
-| Projeto | Descrição |
-|---|---|
-| **Gastando Certo** | Controle financeiro pessoal |
-| **Arcane Cards** | Jogo de cartas web com coleção, mercado e batalhas em tempo real (Socket.io) |
-| **Central Hub** | Portal e gateway nginx que publica várias aplicações sob um mesmo domínio |
-| **Farol** | Central de documentação de projetos, com versões, busca e servidor MCP |
-| **Hangar** | Painel para monitorar status, backups e repositórios dos meus apps |
-| **Tempo de Tela** | Extensão do Chrome que mede o tempo no YouTube e na Twitch, com API e dashboard |
-
-</details>
-
----
-
 ## 📊 Estatísticas
 
 <p align="center">
