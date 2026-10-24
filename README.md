@@ -41,7 +41,7 @@
 ## 📊 Estatísticas
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=JoaoPedroSaraivaDrummond&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" alt="Estatísticas do GitHub">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=JoaoPedroSaraivaDrummond&show_icons=true&custom_title=Estat%C3%ADsticas%20do%20GitHub%20de%20Jo%C3%A3o%20Pedro%20Drummond&theme=tokyonight&include_all_commits=true&locale=pt-br" alt="Estatísticas do GitHub">
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoPedroSaraivaDrummond&layout=compact&langs_count=8&theme=tokyonight&custom_title=Linguagens" alt="Linguagens mais usadas">
 </p>
 
