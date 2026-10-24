@@ -1,6 +1,6 @@
 # 👋 Olá, eu sou o João Pedro
 
-`DevOps` `Desenvolvedor Full-Stack`
+`DevOps` `Desenvolvedor Full-Stack` `Estudante de ADS`
 
 ⚙️ Automatizo infraestrutura e entrega com **Docker, Kubernetes e Azure DevOps** | 💻 Construo aplicações web completas com **Node.js, TypeScript e React**.
 
