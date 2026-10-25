@@ -36,6 +36,10 @@
 
 <img src="https://skillicons.dev/icons?i=git,github&theme=dark" alt="Versionamento">
 
+**Ferramentas de IA**
+
+<img height="48" src="assets/ferramentas-ia.svg" alt="Gemini, Claude, ChatGPT e DeepSeek">
+
 ---
 
 ## 📊 Estatísticas

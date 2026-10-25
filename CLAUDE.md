@@ -6,6 +6,7 @@ Repositório especial do GitHub: o `README.md` daqui aparece no topo de github.c
 - **Branches:** `dev` é a padrão no GitHub (é dela que o perfil lê o README); `main` só recebe merge quando o usuário pedir.
 - **Conteúdo:** só o README. Se algum projeto privado for citado, vai sem link e sem domínio. Nada de dados pessoais além do LinkedIn e do e-mail já publicados.
 - **Cards de estatísticas e linguagens:** gerados por `.github/scripts/estatisticas.py` no workflow `snake.yml` (a cada 6 h), com o mesmo tamanho e tema, e publicados na branch `output` junto com a cobrinha. As linguagens contam só os repositórios públicos. Usa só o `GITHUB_TOKEN` do Actions e dados que o perfil já mostra publicamente (inclui a contagem anônima das contribuições privadas). Não troque por uma solução que exija token pessoal: o repositório é público e os logs das Actions também.
+- **Ícones de IA:** `assets/ferramentas-ia.svg` (Gemini, Claude, ChatGPT e DeepSeek) imita o estilo do skillicons.dev, que não tem essas marcas. Os desenhos vêm do Simple Icons (CC0); para trocar um ícone, substitua o `<path>` do bloco correspondente.
 - O README não lista projetos (a seção de projetos foi removida); os repositórios públicos aparecem nos "Pinned" do perfil.
 
 ## Conta de teste (login)
