@@ -7,6 +7,10 @@ Repositório especial do GitHub: o `README.md` daqui aparece no topo de github.c
 - **Conteúdo:** só o README. Se algum projeto privado for citado, vai sem link e sem domínio. Nada de dados pessoais além do LinkedIn e do e-mail já publicados.
 - O README não lista projetos (a seção de projetos foi removida); os repositórios públicos aparecem nos "Pinned" do perfil.
 
+## Conta de teste (login)
+
+Hoje esta aplicação não tem login. Se passar a ter login ou cadastro, o Claude usa a conta **`admin@claude.local` / `admin123`** para entrar, testar e tirar prints. Se ela ainda não existir no banco de desenvolvimento, crie pelo cadastro da própria aplicação (ou pelo seed). A conta é só de desenvolvimento: nunca a crie nem a deixe ativa em produção.
+
 ## Versionamento
 
 Todos os projetos seguem **MAJOR.MINOR.PATCH** (MAJOR: mudança incompatível; MINOR: funcionalidade nova compatível; PATCH: correção de bug; ao subir um número, os da direita voltam a zero). Este repositório é só um README, sem `package.json`, então não tem número de versão. Ao citar a versão de algum projeto no README, use esse formato.
