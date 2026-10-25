@@ -29,7 +29,10 @@ jobs:
       # Só dados públicos do perfil (inclui a contagem anônima das contribuições privadas);
       # usa o token automático do Actions, sem token pessoal.
       - name: Card de estatísticas
-        run: python3 -I .github/scripts/estatisticas.py "${{ github.repository_owner }}" dist/github-stats.svg "Estatísticas do GitHub de João Pedro Drummond"
+        # A dist/ sai do container da cobrinha como root
+        run: |
+          sudo chown -R "$USER" dist
+          python3 -I .github/scripts/estatisticas.py "${{ github.repository_owner }}" dist/github-stats.svg "Estatísticas do GitHub de João Pedro Drummond"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
