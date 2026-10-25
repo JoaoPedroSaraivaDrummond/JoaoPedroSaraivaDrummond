@@ -41,8 +41,8 @@
 ## 📊 Estatísticas
 
 <p align="center">
-  <img height="200" src="https://raw.githubusercontent.com/JoaoPedroSaraivaDrummond/JoaoPedroSaraivaDrummond/output/github-stats.svg" alt="Estatísticas do GitHub (inclui contribuições privadas, anônimas)">
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoPedroSaraivaDrummond&layout=compact&langs_count=8&theme=tokyonight&custom_title=Linguagens" alt="Linguagens mais usadas">
+  <img height="230" src="https://raw.githubusercontent.com/JoaoPedroSaraivaDrummond/JoaoPedroSaraivaDrummond/output/github-stats.svg" alt="Estatísticas do GitHub (inclui contribuições privadas, anônimas)">
+  <img height="230" src="https://raw.githubusercontent.com/JoaoPedroSaraivaDrummond/JoaoPedroSaraivaDrummond/output/github-langs.svg" alt="Linguagens mais usadas">
 </p>
 
 ---
