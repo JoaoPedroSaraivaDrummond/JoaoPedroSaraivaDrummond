@@ -99,6 +99,8 @@ def sequencias(dias: dict[str, int], hoje: date) -> dict:
     for d in sorted(ativos):
         atual_corrida = atual_corrida + 1 if d - timedelta(days=1) in ativos else 1
         maior = max(maior, atual_corrida)
+    # O calendário da API pode estar em UTC e já ter o dia seguinte ao de Brasília
+    hoje = max([hoje, *ativos])
     dia = hoje if hoje in ativos else hoje - timedelta(days=1)
     atual = 0
     while dia in ativos:
