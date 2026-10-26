@@ -1,3 +1,7 @@
 
 # Relatórios de segurança e documentação local nunca vão para o git
 docs/
+
+# Cache do Python (tem caminhos da máquina local)
+__pycache__/
+*.pyc
