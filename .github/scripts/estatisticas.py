@@ -109,10 +109,17 @@ def linguagens(repositorios: list[dict]) -> list[tuple[str, str, float]]:
         for aresta in repositorio["languages"]["edges"]:
             nome = aresta["node"]["name"]
             tamanhos[nome] = tamanhos.get(nome, 0) + aresta["size"]
-            cores[nome] = aresta["node"]["color"] or "#858585"
+            cores[nome] = cor_segura(aresta["node"]["color"])
     total = sum(tamanhos.values()) or 1
     maiores = sorted(tamanhos.items(), key=lambda item: item[1], reverse=True)[:MAX_LINGUAGENS]
     return [(nome, cores[nome], 100 * tamanho / total) for nome, tamanho in maiores]
+
+
+def cor_segura(cor: str | None) -> str:
+    """A cor vem da API e vai para um atributo do SVG: só passa #rgb ou #rrggbb."""
+    if cor and len(cor) in (4, 7) and cor[0] == "#" and all(c in "0123456789abcdefABCDEF" for c in cor[1:]):
+        return cor
+    return "#858585"
 
 
 def sequencias(dias: dict[str, int], hoje: date) -> dict:
@@ -142,8 +149,10 @@ def dias_texto(n: int) -> str:
 
 def cartao(titulo: str, corpo: str, rodape: str) -> str:
     """Moldura comum aos dois cards (tema tokyonight, sem borda)."""
+    # O título vai também para um atributo (aria-label): lá as aspas precisam de escape
+    titulo_atributo = escape(titulo, {'"': "&quot;"})
     titulo, rodape = escape(titulo), escape(rodape)
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{LARGURA}" height="{ALTURA}" viewBox="0 0 {LARGURA} {ALTURA}" role="img" aria-label="{titulo}">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{LARGURA}" height="{ALTURA}" viewBox="0 0 {LARGURA} {ALTURA}" role="img" aria-label="{titulo_atributo}">
   <title>{titulo}</title>
   <style>
     .titulo {{ font: 600 15px 'Segoe UI', Ubuntu, sans-serif; fill: #70a5fd; }}

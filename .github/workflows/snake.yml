@@ -8,6 +8,8 @@ on:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
+# Ações de terceiros fixadas por commit (não por tag): uma tag movida não roda código novo com o token de escrita.
+# Para atualizar, troque o SHA pelo do novo release e o comentário com a versão.
 permissions:
   contents: write
 
@@ -15,11 +17,15 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
 
-      - uses: Platane/snk@v3
+      # Teste quebrado não publica card quebrado
+      - name: Testes do gerador dos cards
+        run: python3 -I -m unittest discover -s tests
+
+      - uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -36,7 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           target_branch: output
           build_dir: dist
