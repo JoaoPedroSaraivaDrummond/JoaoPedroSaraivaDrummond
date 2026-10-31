@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="265" viewBox="0 0 400 265" role="img" aria-label="Estatísticas do GitHub de João Pedro Drummond">
+  <title>Estatísticas do GitHub de João Pedro Drummond</title>
+  <style>
+    .titulo { font: 600 15px 'Segoe UI', Ubuntu, sans-serif; fill: #70a5fd; }
+    .rotulo { font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #38bdae; }
+    .valor { font: 700 14px 'Segoe UI', Ubuntu, sans-serif; fill: #38bdae; }
+    .rodape { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #a9b1d6; opacity: 0.7; }
+  </style>
+  <rect width="400" height="265" rx="6" fill="#1a1b27"/>
+  <text class="titulo" x="25" y="36">Estatísticas do GitHub de João Pedro Drummond</text>
+  <g transform="translate(25, 68)"><text class="rotulo">Contribuições no último ano:</text><text class="valor" x="350" text-anchor="end">371</text></g>
+  <g transform="translate(25, 93)"><text class="rotulo">Contribuições desde 2024:</text><text class="valor" x="350" text-anchor="end">432</text></g>
+  <g transform="translate(25, 118)"><text class="rotulo">Sequência atual:</text><text class="valor" x="350" text-anchor="end">11 dias</text></g>
+  <g transform="translate(25, 143)"><text class="rotulo">Maior sequência:</text><text class="valor" x="350" text-anchor="end">11 dias</text></g>
+  <g transform="translate(25, 168)"><text class="rotulo">Pull requests:</text><text class="valor" x="350" text-anchor="end">17</text></g>
+  <g transform="translate(25, 193)"><text class="rotulo">Issues:</text><text class="valor" x="350" text-anchor="end">23</text></g>
+  <g transform="translate(25, 218)"><text class="rotulo">Estrelas:</text><text class="valor" x="350" text-anchor="end">0</text></g>
+  <text class="rodape" x="25" y="250">Inclui contribuições privadas (anônimas) · atualizado em 31/10/2026</text>
+</svg>
